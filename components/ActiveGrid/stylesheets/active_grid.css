@@ -1,0 +1,47 @@
+.grid{
+  float: left;
+}
+
+.grid_hint{
+  opacity: 0.9;
+}
+
+.grid_level_0{
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  opacity: 0.5;
+  background-color: #eee;
+}
+
+.grid_level_1{
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  opacity: 0.5;
+  background-color: #d6e685;
+}
+
+.grid_level_2{
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  opacity: 0.5;
+  background-color: #8cc665;
+}
+
+.grid_level_3{
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  opacity: 0.5;
+  background-color: #44a340;
+}
+
+.grid_level_4{
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  opacity: 0.5;
+  background-color: #1e6823;
+}
