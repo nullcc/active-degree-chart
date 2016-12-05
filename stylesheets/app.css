@@ -1,9 +1,5 @@
 .app{
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 200px;
-  height: 100px;
-  margin-left: -100px;
-  margin-top: -50px;
+  left: 20%;
+  top: 20%;
 }

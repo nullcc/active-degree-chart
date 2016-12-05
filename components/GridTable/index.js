@@ -23,22 +23,31 @@ export default class GridTable extends React.Component {
 
     };
 
-    renderGrids() {
-      var grids = [];
-      this.props.grids.forEach(function(grid){
-        grids.push(
+    renderGrids(rows) {
+      let grids = [];
+      let col = [];
+      for (let i  = 0; i < this.props.grids.length; i += 1) {
+        const grid = this.props.grids[i];
+        col.push(
           <ActiveGrid grid={grid}/>
         );
-      });
+        if ((i + 1) % rows === 0) {
+          grids.push(<div className="grid_col">{ col }</div>);
+          col = [];
+        }
+      }
+      grids.push(<div className="grid_col">{ col }</div>);
       return grids;
     }
 
     render() {
-
         return (
+          <div>
             <div className='grid_table'>
-              { this.renderGrids() }
+              { this.renderGrids(this.state.rows) }
+              <div style={{ 'clear':'both' }}></div>
             </div>
+          </div>
         );
     }
 };

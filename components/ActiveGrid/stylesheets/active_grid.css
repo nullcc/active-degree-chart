@@ -1,9 +1,11 @@
 .grid{
-  float: left;
+
 }
 
 .grid_hint{
   opacity: 0.9;
+  position: absolute;
+  z-index: 999;
 }
 
 .grid_level_0{

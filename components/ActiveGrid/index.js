@@ -3,6 +3,7 @@
 import React from 'react';
 import "./stylesheets/active_grid.css"
 import "../../stylesheets/hint.min.css"
+const moment = require('moment');
 
 export default class ActiveGrid extends React.Component {
 
@@ -44,9 +45,9 @@ export default class ActiveGrid extends React.Component {
     render() {
         return (
           <div className="grid">
-            <span className="hint--top grid_hint" aria-label={ `${this.props.grid.degree || 'No'} contributions` } >
+            <div className="hint--top grid_hint" aria-label={ `${this.props.grid.degree || 'No'} contributions on ${this.props.grid.date}` } >
               <div className={ this.getGridLevel() }></div>
-            </span>
+            </div>
           </div>
         );
     }
