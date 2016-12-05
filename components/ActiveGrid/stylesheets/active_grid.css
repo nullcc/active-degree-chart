@@ -10,7 +10,7 @@
   width: 10px;
   height: 10px;
   margin: 1px;
-  opacity: 0.5;
+  opacity: 1;
   background-color: #eee;
 }
 
@@ -18,7 +18,7 @@
   width: 10px;
   height: 10px;
   margin: 1px;
-  opacity: 0.5;
+  opacity: 1;
   background-color: #d6e685;
 }
 
@@ -26,7 +26,7 @@
   width: 10px;
   height: 10px;
   margin: 1px;
-  opacity: 0.5;
+  opacity: 1;
   background-color: #8cc665;
 }
 
@@ -34,7 +34,7 @@
   width: 10px;
   height: 10px;
   margin: 1px;
-  opacity: 0.5;
+  opacity: 1;
   background-color: #44a340;
 }
 
@@ -42,6 +42,6 @@
   width: 10px;
   height: 10px;
   margin: 1px;
-  opacity: 0.5;
+  opacity: 1;
   background-color: #1e6823;
 }
