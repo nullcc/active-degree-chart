@@ -7,12 +7,11 @@ import ActiveGrid from '../ActiveGrid';
 export default class GridTable extends React.Component {
 
     constructor(props) {
-        super(props);
-        this.state = {
-          rows: 6,
-          cols: 10
-        };
-
+      super(props);
+      this.state = {
+        rows: 6,
+        cols: 10
+      };
     }
 
     componentDidMount() {
@@ -32,22 +31,22 @@ export default class GridTable extends React.Component {
           <ActiveGrid grid={grid}/>
         );
         if ((i + 1) % rows === 0) {
-          grids.push(<div className="grid_col">{ col }</div>);
+          grids.push(<span className="grid_col">{ col }</span>);
           col = [];
         }
       }
-      grids.push(<div className="grid_col">{ col }</div>);
+      grids.push(<span className="grid_col">{ col }</span>);
       return grids;
     }
 
     render() {
-        return (
-          <div>
-            <div className='grid_table'>
-              { this.renderGrids(this.state.rows) }
-              <div style={{ 'clear':'both' }}></div>
-            </div>
+      return (
+        <div>
+          <div className='grid_table'>
+            { this.renderGrids(this.state.rows) }
+            <div style={{ 'clear':'both' }}></div>
           </div>
-        );
+        </div>
+      );
     }
 };

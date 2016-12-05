@@ -1,9 +1,9 @@
 .grid_table{
   border-radius: 3px;
   border: 1px solid #d5d5d5;
-  padding: 10px;
+  padding: 20px;
 }
 
 .grid_col{
-  float: left;
+  float:left;
 }

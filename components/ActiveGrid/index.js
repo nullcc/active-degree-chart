@@ -1,9 +1,9 @@
 "use strict";
 
 import React from 'react';
+const moment = require('moment');
 import "./stylesheets/active_grid.css"
 import "../../stylesheets/hint.min.css"
-const moment = require('moment');
 
 export default class ActiveGrid extends React.Component {
 
@@ -45,7 +45,7 @@ export default class ActiveGrid extends React.Component {
     render() {
         return (
           <div className="grid">
-            <div className="hint--top grid_hint" aria-label={ `${this.props.grid.degree || 'No'} contributions on ${this.props.grid.date}` } >
+            <div className="hint--top" aria-label={ `${this.props.grid.degree || 'No'} contributions on ${this.props.grid.date}` } >
               <div className={ this.getGridLevel() }></div>
             </div>
           </div>
